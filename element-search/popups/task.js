@@ -6,7 +6,11 @@ let showSuccess = document.getElementsByClassName('show-success').item(0);
 
 modalClose.item(0).onclick = () => document.getElementById('modal_main').className = 'modal';
 
-showSuccess.onclick = () => document.getElementById('modal_success').className = 'modal modal_active';
+showSuccess.onclick = () => {
+
+	document.getElementById('modal_success').className = 'modal modal_active';
+	document.getElementById('modal_main').className = 'modal';
+}
 
 modalClose.item(1).onclick = () => {
 
