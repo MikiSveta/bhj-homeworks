@@ -8,8 +8,8 @@ for (let i = 0; i < menuLink.length; i++) {
 
 		if (menuSub) {
 
-			menuSub.className = 'menu menu_sub menu_active';
+			menuSub.classList.toggle("menu_active");
 			return false;
-		}
+		} 
 	}
 }
