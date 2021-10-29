@@ -1,8 +1,9 @@
 const tasksList = document.getElementById('tasks__list');
 const tasksInput = document.getElementById('task__input');
+const tasksAdd = document.getElementById('tasks__add')
 
-tasksInput.addEventListener('change', (event) => {
-
+function taskAdd(event) {
+	
 	if(!tasksInput.value.trim()) {
 		return false;
 	}
@@ -22,7 +23,13 @@ tasksInput.addEventListener('change', (event) => {
 	const taskRemove = document.querySelector('.task__remove');
 
 	taskRemove.addEventListener('click', () => taskRemove.closest('.task').remove());
-})
+}
+
+tasksInput.addEventListener('dowm', taskAdd)
+
+tasksAdd.addEventListener('click', taskAdd)
+
+
 
 
 
