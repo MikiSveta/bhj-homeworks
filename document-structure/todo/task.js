@@ -4,6 +4,8 @@ const tasksAdd = document.getElementById('tasks__add')
 
 function taskAdd(event) {
 	
+	event.preventDefault();
+
 	if(!tasksInput.value.trim()) {
 		return false;
 	}
@@ -17,8 +19,6 @@ function taskAdd(event) {
 	);
 
 	tasksInput.value = '';
-
-	event.preventDefault();
 
 	const taskRemove = document.querySelector('.task__remove');
 
